@@ -64,7 +64,7 @@ class SnehFirebaseMessagingService : FirebaseMessagingService() {
         )
 
         val notification = NotificationCompat.Builder(this, channelId)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(android.R.drawable.sym_def_app_icon)
             .setContentTitle(title)
             .setContentText(body)
             .setAutoCancel(true)
