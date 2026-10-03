@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "470889263258",
+    "project_id": "sneh-dating-app",
+    "storage_bucket": "sneh-dating-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470889263258:android:a1b2c3d4e5f60718293a4b",
+        "android_client_info": {
+          "package_name": "com.sneh.dating"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470889263258-snehclientid.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "470889263258-snehclientandroid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sneh.dating",
+            "certificate_hash": "2468135790abcdef1234567890abcdef12345678"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-SNEH_DATING_PROD_API_KEY_SECURE_2026"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

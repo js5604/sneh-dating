@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <string name="app_name">Sneh</string>
+    <string name="app_tagline">Mindful Connections for Modern India</string>
+    <string name="slogan">Safe. Genuine. Culturally Rooted.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Meaningful Connections</string>
+    <string name="onboarding_1_desc">Designed for Indian singles seeking genuine relationships, mutual respect, and shared cultural values.</string>
+    <string name="onboarding_2_title">Your Privacy Above All</string>
+    <string name="onboarding_2_desc">No exact GPS coordinates shared. Control your visibility, hide sensitive data, and explore in Incognito mode.</string>
+    <string name="onboarding_3_title">Zero Tolerance for Scams</string>
+    <string name="onboarding_3_desc">Built-in AI scam detection alerts you if someone asks for UPI transfers, OTPs, or financial details.</string>
+    <string name="onboarding_4_title">Verified &amp; Safe</string>
+    <string name="onboarding_4_desc">Govt ID online verification (Aadhaar, PAN, Passport), selfie checks, and Indian emergency helpline integrations.</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_account">Already a member? Sign In</string>
+
+    <!-- Age Gate & Eligibility -->
+    <string name="age_gate_title">Age &amp; Eligibility Verification</string>
+    <string name="age_gate_subtitle">Sneh is exclusively for adults aged 18 and above in accordance with Indian Law.</string>
+    <string name="enter_dob">Enter Date of Birth</string>
+    <string name="age_error_underage">You must be at least 18 years old to join Sneh.</string>
+    <string name="dpdp_consent_label">I confirm I am 18+ years of age and consent to data processing under the Digital Personal Data Protection (DPDP) Act.</string>
+    <string name="continue_btn">Continue</string>
+
+    <!-- Auth -->
+    <string name="login_with_phone">Continue with Mobile Number</string>
+    <string name="enter_phone_number">Enter your 10-digit mobile number</string>
+    <string name="country_code">+91 (India)</string>
+    <string name="send_otp">Send Verification Code</string>
+    <string name="enter_otp">Enter 6-Digit OTP</string>
+    <string name="resend_otp_in">Resend OTP in %1$ds</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify_and_proceed">Verify &amp; Continue</string>
+    <string name="or_divider">or</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+
+    <!-- Optional Details: Caste, Religion, Marital Status, DOB -->
+    <string name="optional_details_title">Optional Matchmaking Details</string>
+    <string name="caste_label">Caste / Community (ਜਾਤੀ)</string>
+    <string name="religion_label">Religion (ਧਰਮ)</string>
+    <string name="marital_status_label">Marital Status (ਵਿਆਹੁਤਾ ਸਥਿਤੀ)</string>
+    <string name="dob_born_label">Born on %1$s</string>
+    <string name="marital_unmarried">Never Married</string>
+    <string name="marital_divorced">Divorced</string>
+    <string name="marital_awaiting_divorce">Awaiting Divorce</string>
+    <string name="marital_widowed">Widowed</string>
+
+    <!-- Govt ID Verification -->
+    <string name="govt_verify_title">Govt ID Online Verification</string>
+    <string name="govt_verify_sub">Verify with Aadhaar Card, PAN Card, Indian Passport, or Voter ID to get the verified tick.</string>
+    <string name="doc_aadhaar">Aadhaar Card (UIDAI / DigiLocker)</string>
+    <string name="doc_pan">PAN Card (Income Tax Department)</string>
+    <string name="doc_passport">Indian Passport (Passport Seva)</string>
+    <string name="doc_voter_id">Voter ID (Election Commission)</string>
+    <string name="verified_tick_label">Govt ID Verified Member</string>
+
+    <!-- Themes -->
+    <string name="theme_title">Interface Aesthetics &amp; Themes</string>
+    <string name="theme_royal_gulab">Royal Gulab &amp; Velvet</string>
+    <string name="theme_kesari_gold">Kesari Golden Heritage</string>
+    <string name="theme_phulkari">Punjabi Phulkari Festival</string>
+    <string name="theme_nilgiri">Nilgiri Royal Indigo</string>
+    <string name="theme_ivory_silk">Ivory Silk &amp; Rose</string>
+
+    <!-- Rich Chat Media & Live Location -->
+    <string name="share_live_location">Share Live Location</string>
+    <string name="share_photo">Share Photo</string>
+    <string name="share_video">Share Video</string>
+    <string name="live_location_active">Live location sharing active for %1$d mins</string>
+
+    <!-- Owner Monetisation Portal -->
+    <string name="owner_monetisation_title">Owner Monetisation Suite</string>
+    <string name="owner_access_only">Exclusive Owner Access: Jatindersingh5604@gmail.com</string>
+
+    <!-- Discovery -->
+    <string name="nav_discover">Discover</string>
+    <string name="nav_likes">Likes</string>
+    <string name="nav_matches">Matches</string>
+    <string name="nav_chat">Messages</string>
+    <string name="nav_profile">Profile</string>
+    <string name="approx_distance">Approx. %1$d km away</string>
+    <string name="verified_member">Verified Profile</string>
+    <string name="like">Like</string>
+    <string name="pass">Pass</string>
+    <string name="super_like">Super Like</string>
+    <string name="empty_discovery_title">You\'re all caught up!</string>
+    <string name="empty_discovery_desc">Check back soon or expand your distance &amp; age preferences in Discovery settings.</string>
+
+    <!-- Match -->
+    <string name="its_a_match">It\'s a Match!</string>
+    <string name="match_desc">You and %1$s both like each other.</string>
+    <string name="send_a_message">Send a Message</string>
+    <string name="keep_discovering">Keep Discovering</string>
+    <string name="ai_icebreaker_prompt">AI Suggested Icebreaker:</string>
+
+    <!-- Chat & Safety -->
+    <string name="chat_placeholder">Type a respectful message…</string>
+    <string name="safety_warning_title">Safety Alert</string>
+    <string name="safety_warning_otp_upi">Be cautious. Never share OTPs, passwords, UPI IDs, bank details, or send money to anyone you met online.</string>
+    <string name="report_user">Report</string>
+    <string name="block_user">Block</string>
+    <string name="unmatch">Unmatch</string>
+
+    <!-- Safety Center -->
+    <string name="safety_center_title">Safety &amp; Well-being Center</string>
+    <string name="emergency_helpline_title">National Emergency Helplines (India)</string>
+    <string name="helpline_police">National Emergency: 112</string>
+    <string name="helpline_women">Women in Distress Helpline: 1091 / 181</string>
+    <string name="helpline_cyber">National Cyber Crime Reporting: 1930</string>
+
+    <!-- Privacy Dashboard -->
+    <string name="privacy_dashboard_title">Privacy &amp; Data Rights</string>
+    <string name="privacy_approx_loc">Show Approximate Distance Only</string>
+    <string name="privacy_incognito">Incognito Mode (Visible only to profiles you like)</string>
+    <string name="privacy_read_receipts">Read Receipts</string>
+    <string name="privacy_download_data">Download My Data (DPDP Request)</string>
+    <string name="privacy_delete_account">Delete Account &amp; Personal Data</string>
+
+    <!-- Premium -->
+    <string name="premium_title">Sneh Shahi</string>
+    <string name="premium_subtitle">Experience dating with royal privileges and enhanced privacy.</string>
+</resources>

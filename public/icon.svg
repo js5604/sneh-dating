@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241228" />
+      <stop offset="50%" stop-color="#140b1c" />
+      <stop offset="100%" stop-color="#0a0510" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185" />
+      <stop offset="50%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#9F1239" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Squircle -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)" stroke="#E11D48" stroke-width="6" stroke-opacity="0.3" />
+
+  <!-- Ambient Glow -->
+  <circle cx="256" cy="240" r="140" fill="#E11D48" opacity="0.25" filter="url(#glow)" />
+  <circle cx="256" cy="270" r="80" fill="#F59E0B" opacity="0.2" filter="url(#glow)" />
+
+  <!-- Royal Sneh Heart & Diya Motif -->
+  <g transform="translate(0, -10)">
+    <!-- Heart Path -->
+    <path d="M 256,380 C 256,380 120,290 120,195 C 120,135 165,95 220,95 C 242,95 256,110 256,110 C 256,110 270,95 292,95 C 347,95 392,135 392,195 C 392,290 256,380 256,380 Z" 
+          fill="url(#roseGrad)" filter="url(#glow)" />
+
+    <!-- Inner Golden Flame / Diya Motif -->
+    <path d="M 256,320 C 256,320 185,255 185,195 C 185,155 215,130 256,170 C 297,130 327,155 327,195 C 327,255 256,320 256,320 Z" 
+          fill="url(#goldGrad)" opacity="0.9" />
+
+    <!-- Pure Light Core -->
+    <circle cx="256" cy="195" r="16" fill="#FFFFFF" opacity="0.95" />
+  </g>
+
+  <!-- Punjabi Script Subtitle / Monogram -->
+  <text x="256" y="445" font-family="'Noto Sans Gurmukhi', sans-serif" font-size="44" font-weight="bold" fill="#FDE68A" text-anchor="middle" letter-spacing="4">ਸਨੇਹ</text>
+</svg>

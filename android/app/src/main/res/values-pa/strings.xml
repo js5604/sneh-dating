@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <string name="app_name">ਸਨੇਹ (Sneh)</string>
+    <string name="app_tagline">ਆਧੁਨਿਕ ਭਾਰਤ ਲਈ ਸੱਚੇ ਰਿਸ਼ਤੇ</string>
+    <string name="slogan">ਸੁਰੱਖਿਅਤ। ਸੱਚਾ। ਸਤਿਕਾਰਯੋਗ।</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">ਅਰਥਪੂਰਨ ਰਿਸ਼ਤੇ</string>
+    <string name="onboarding_1_desc">ਸੱਚੇ ਸੰਬੰਧਾਂ, ਆਪਸੀ ਸਤਿਕਾਰ ਅਤੇ ਸਾਂਝੇ ਸੱਭਿਆਚਾਰਕ ਮੁੱਲਾਂ ਦੀ ਭਾਲ ਕਰਨ ਵਾਲੇ ਭਾਰਤੀ ਸਿੰਗਲਜ਼ ਲਈ ਵਿਸ਼ੇਸ਼ ਤੌਰ \'ਤੇ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ।</string>
+    <string name="onboarding_2_title">ਤੁਹਾਡੀ ਗੋਪਨੀਯਤਾ ਸਭ ਤੋਂ ਪਹਿਲਾਂ</string>
+    <string name="onboarding_2_desc">ਕੋਈ ਸਹੀ GPS ਸਥਾਨ ਸਾਂਝਾ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ। ਆਪਣੀ ਦਿੱਖ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰੋ ਅਤੇ ਗੁਪਤ (ਇਨਕੋਗਨੀਟੋ) ਮੋਡ ਵਿੱਚ ਖੋਜ ਕਰੋ।</string>
+    <string name="onboarding_3_title">ਧੋਖਾਧੜੀ ਵਿਰੁੱਧ ਸਖ਼ਤ ਸੁਰੱਖਿਆ</string>
+    <string name="onboarding_3_desc">ਸਾਡਾ AI ਸਿਸਟਮ ਤੁਰੰਤ ਸੁਚੇਤ ਕਰਦਾ ਹੈ ਜੇਕਰ ਕੋਈ ਪੈਸੇ, UPI ਟ੍ਰਾਂਸਫਰ ਜਾਂ OTP ਮੰਗਦਾ ਹੈ।</string>
+    <string name="onboarding_4_title">ਤਸਦੀਕਸ਼ੁਦਾ ਅਤੇ ਭਰੋਸੇਯੋਗ</string>
+    <string name="onboarding_4_desc">ਸਰਕਾਰੀ ਦਸਤਾਵੇਜ਼ ਤਸਦੀਕ (ਆਧਾਰ, ਪੈਨ, ਪਾਸਪੋਰਟ), ਸੈਲਫੀ ਜਾਂਚ ਅਤੇ ਭਾਰਤੀ ਹੈਲਪਲਾਈਨ ਸਹਾਇਤਾ।</string>
+    <string name="get_started">ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="already_have_account">ਪਹਿਲਾਂ ਹੀ ਮੈਂਬਰ ਹੋ? ਲੌਗ ਇਨ ਕਰੋ</string>
+
+    <!-- Age Gate & Eligibility -->
+    <string name="age_gate_title">ਉਮਰ ਅਤੇ ਯੋਗਤਾ ਦੀ ਪੁਸ਼ਟੀ</string>
+    <string name="age_gate_subtitle">ਭਾਰਤੀ ਕਾਨੂੰਨ ਅਨੁਸਾਰ ਸਨੇਹ ਸਿਰਫ਼ 18 ਸਾਲ ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ ਉਮਰ ਦੇ ਬਾਲਗਾਂ ਲਈ ਹੈ।</string>
+    <string name="enter_dob">ਜਨਮ ਮਿਤੀ ਦਰਜ ਕਰੋ</string>
+    <string name="age_error_underage">ਸਨੇਹ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਤੁਹਾਡੀ ਉਮਰ ਘੱਟੋ-ਘੱਟ 18 ਸਾਲ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।</string>
+    <string name="dpdp_consent_label">ਮੈਂ ਪੁਸ਼ਟੀ ਕਰਦਾ/ਕਰਦੀ ਹਾਂ ਕਿ ਮੇਰੀ ਉਮਰ 18+ ਹੈ ਅਤੇ ਮੈਂ DPDP ਕਾਨੂੰਨ ਤਹਿਤ ਸਹਿਮਤੀ ਦਿੰਦਾ/ਦਿੰਦੀ ਹਾਂ।</string>
+    <string name="continue_btn">ਅੱਗੇ ਵਧੋ</string>
+
+    <!-- Optional Details: Caste, Religion, Marital Status, DOB -->
+    <string name="optional_details_title">ਚੋਣਵੀਂ ਜਾਣਕਾਰੀ (ਜਾਤੀ, ਧਰਮ, ਵਿਆਹੁਤਾ ਸਥਿਤੀ)</string>
+    <string name="caste_label">ਜਾਤੀ / ਬਰਾਦਰੀ</string>
+    <string name="religion_label">ਧਰਮ</string>
+    <string name="marital_status_label">ਵਿਆਹੁਤਾ ਸਥਿਤੀ</string>
+    <string name="dob_born_label">ਜਨਮ ਮਿਤੀ: %1$s</string>
+    <string name="marital_unmarried">ਅਣਵਿਆਹਿਆ</string>
+    <string name="marital_divorced">ਤਲਾਕਸ਼ੁਦਾ</string>
+    <string name="marital_awaiting_divorce">ਤਲਾਕ ਦੀ ਉਡੀਕ</string>
+    <string name="marital_widowed">ਵਿਧਵਾ / ਵਿਧੁਰ</string>
+
+    <!-- Govt ID Verification -->
+    <string name="govt_verify_title">ਸਰਕਾਰੀ ਪਛਾਣ ਪੱਤਰ ਆਨਲਾਈਨ ਤਸਦੀਕ</string>
+    <string name="govt_verify_sub">ਆਧਾਰ ਕਾਰਡ, ਪੈਨ ਕਾਰਡ ਜਾਂ ਪਾਸਪੋਰਟ ਰਾਹੀਂ ਤਸਦੀਕ ਕਰਕੇ ਬਲੂ ਟਿੱਕ ਪ੍ਰਾਪਤ ਕਰੋ।</string>
+    <string name="doc_aadhaar">ਆਧਾਰ ਕਾਰਡ (UIDAI / ਡਿਜੀਲੌਕਰ)</string>
+    <string name="doc_pan">ਪੈਨ ਕਾਰਡ (ਆਮਦਨ ਕਰ ਵਿਭਾਗ)</string>
+    <string name="doc_passport">ਭਾਰਤੀ ਪਾਸਪੋਰਟ (ਪਾਸਪੋਰਟ ਸੇਵਾ)</string>
+    <string name="doc_voter_id">ਵੋਟਰ ਕਾਰਡ (ਚੋਣ ਕਮਿਸ਼ਨ)</string>
+    <string name="verified_tick_label">ਸਰਕਾਰੀ ਤਸਦੀਕਸ਼ੁਦਾ ਮੈਂਬਰ</string>
+
+    <!-- Themes -->
+    <string name="theme_title">ਐਪ ਇੰਟਰਫੇਸ ਥੀਮ</string>
+    <string name="theme_royal_gulab">ਸ਼ਾਹੀ ਗੁਲਾਬ ਅਤੇ ਮਖ਼ਮਲ</string>
+    <string name="theme_kesari_gold">ਕੇਸਰੀ ਸੁਨਹਿਰੀ ਵਿਰਾਸਤ</string>
+    <string name="theme_phulkari">ਪੰਜਾਬੀ ਫੁਲਕਾਰੀ ਉਤਸਵ</string>
+    <string name="theme_nilgiri">ਨੀਲਗਿਰੀ ਸ਼ਾਹੀ ਇੰਡੀਗੋ</string>
+    <string name="theme_ivory_silk">ਰੇਸ਼ਮ ਅਤੇ ਗੁਲਾਬੀ</string>
+
+    <!-- Rich Chat Media & Live Location -->
+    <string name="share_live_location">ਲਾਈਵ ਲੋਕੇਸ਼ਨ ਸਾਂਝੀ ਕਰੋ</string>
+    <string name="share_photo">ਫੋਟੋ ਭੇਜੋ</string>
+    <string name="share_video">ਵੀਡੀਓ ਕਲਿੱਪ ਭੇਜੋ</string>
+    <string name="live_location_active">ਲਾਈਵ ਲੋਕੇਸ਼ਨ %1$d ਮਿੰਟਾਂ ਲਈ ਕਿਰਿਆਸ਼ੀਲ ਹੈ</string>
+
+    <!-- Owner Monetisation Portal -->
+    <string name="owner_monetisation_title">ਮਾਲਕ ਮੋਨੇਟਾਈਜੇਸ਼ਨ ਸੂਟ</string>
+    <string name="owner_access_only">ਸਿਰਫ਼ ਮਾਲਕ ਲਈ: Jatindersingh5604@gmail.com</string>
+
+    <!-- Discovery -->
+    <string name="nav_discover">ਖੋਜ</string>
+    <string name="nav_likes">ਪਸੰਦਾਂ</string>
+    <string name="nav_matches">ਜੋੜੀਆਂ</string>
+    <string name="nav_chat">ਸੁਨੇਹੇ</string>
+    <string name="nav_profile">ਪ੍ਰੋਫਾਈਲ</string>
+    <string name="approx_distance">ਲਗਭਗ %1$d ਕਿਲੋਮੀਟਰ ਦੂਰ</string>
+    <string name="verified_member">ਤਸਦੀਕਸ਼ੁਦਾ ਪ੍ਰੋਫਾਈਲ</string>
+    <string name="like">ਪਸੰਦ ਕਰੋ</string>
+    <string name="pass">ਅਣਡਿੱਠ ਕਰੋ</string>
+    <string name="super_like">ਸੁਪਰ ਲਾਈਕ</string>
+</resources>

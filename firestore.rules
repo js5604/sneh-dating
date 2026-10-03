@@ -1,0 +1,121 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isAppOwner() {
+      // Exclusively authorized owner: Jatindersingh5604@gmail.com
+      return isAuthenticated() && 
+             (request.auth.token.email == 'Jatindersingh5604@gmail.com' || request.auth.token.admin == true);
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && request.auth.token.admin == true;
+    }
+
+    function isNotBlocked(targetUserId) {
+      return !exists(/databases/$(database)/documents/blocks/$(request.auth.uid + '_' + targetUserId)) &&
+             !exists(/databases/$(database)/documents/blocks/$(targetUserId + '_' + request.auth.uid));
+    }
+
+    // 1. Private User Account Metadata
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAppOwner();
+      allow create: if isAuthenticated() && request.auth.uid == userId 
+                    && request.resource.data.keys().hasAll(['createdAt', 'isAgeVerified', 'dpdpConsentGiven'])
+                    && request.resource.data.isAgeVerified == true;
+      allow update: if isOwner(userId) && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['isAdmin', 'isBanned', 'isSuspended']);
+      allow delete: if isOwner(userId);
+    }
+
+    // 2. Public Profiles with Optional Details (Caste, Religion, Marital Status)
+    match /profiles/{userId} {
+      allow read: if isAuthenticated() && 
+                     (resource.data.visibility == 'PUBLIC' || isOwner(userId)) &&
+                     resource.data.isSuspended != true &&
+                     isNotBlocked(userId);
+      allow create, update: if isOwner(userId) &&
+                               request.resource.data.age >= 18 &&
+                               (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['isVerified', 'isSuspended', 'verificationBadgeType', 'govtVerification']) || isAppOwner());
+      allow delete: if isOwner(userId);
+    }
+
+    // 3. Govt ID Online Verifications (Aadhaar, PAN, Passport, Voter ID)
+    // Zero plaintext number exposure: Only masked tokens & DigiLocker state
+    match /govtVerifications/{userId} {
+      allow read: if isOwner(userId) || isAppOwner();
+      allow create, update: if isOwner(userId) || isAppOwner();
+      allow delete: if isOwner(userId);
+    }
+
+    // 4. Owner Monetisation & Ad Configuration (EXCLUSIVELY Jatindersingh5604@gmail.com)
+    match /ownerConfig/{configDoc} {
+      allow read, write: if isAppOwner();
+    }
+
+    // 5. Likes and Passes
+    match /likes/{likeId} {
+      allow read: if isAuthenticated() && (resource.data.fromUserId == request.auth.uid || resource.data.toUserId == request.auth.uid);
+      allow create: if isAuthenticated() && request.resource.data.fromUserId == request.auth.uid && isNotBlocked(request.resource.data.toUserId);
+      allow delete: if isAuthenticated() && resource.data.fromUserId == request.auth.uid;
+    }
+
+    match /passes/{passId} {
+      allow create: if isAuthenticated() && request.resource.data.fromUserId == request.auth.uid;
+      allow read: if isAuthenticated() && resource.data.fromUserId == request.auth.uid;
+    }
+
+    // 6. Matches
+    match /matches/{matchId} {
+      allow read: if isAuthenticated() && request.auth.uid in resource.data.users;
+      allow create: if isAuthenticated() && 
+                    request.auth.uid in request.resource.data.users &&
+                    request.resource.data.users.size() == 2;
+      allow update, delete: if isAuthenticated() && request.auth.uid in resource.data.users;
+    }
+
+    // 7. Conversations & Rich Media Messages (Live Location, Photo, Video, Text)
+    match /conversations/{conversationId} {
+      allow read: if isAuthenticated() && request.auth.uid in resource.data.participants;
+      allow create: if isAuthenticated() && request.auth.uid in request.resource.data.participants;
+      allow update: if isAuthenticated() && request.auth.uid in resource.data.participants;
+
+      match /messages/{messageId} {
+        allow read: if isAuthenticated() && 
+                       request.auth.uid in get(/databases/$(database)/documents/conversations/$(conversationId)).data.participants;
+        allow create: if isAuthenticated() && 
+                         request.resource.data.senderId == request.auth.uid &&
+                         request.auth.uid in get(/databases/$(database)/documents/conversations/$(conversationId)).data.participants;
+        allow update, delete: if isAuthenticated() && resource.data.senderId == request.auth.uid;
+      }
+    }
+
+    // 8. Safety Reports
+    match /reports/{reportId} {
+      allow create: if isAuthenticated() && request.resource.data.reporterId == request.auth.uid;
+      allow read, update, delete: if isAppOwner();
+    }
+
+    // 9. Blocks
+    match /blocks/{blockId} {
+      allow create: if isAuthenticated() && request.resource.data.blockerId == request.auth.uid;
+      allow read: if isAuthenticated() && (resource.data.blockerId == request.auth.uid || isAppOwner());
+      allow delete: if isAuthenticated() && resource.data.blockerId == request.auth.uid;
+    }
+
+    // 10. DPDP Statutory Consents
+    match /consents/{consentId} {
+      allow read: if isOwner(resource.data.userId) || isAppOwner();
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow update: if isOwner(resource.data.userId);
+    }
+  }
+}
