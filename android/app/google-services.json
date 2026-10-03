@@ -16,14 +16,6 @@
         {
           "client_id": "470889263258-snehclientid.apps.googleusercontent.com",
           "client_type": 3
-        },
-        {
-          "client_id": "470889263258-snehclientandroid.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.sneh.dating",
-            "certificate_hash": "2468135790abcdef1234567890abcdef12345678"
-          }
         }
       ],
       "api_key": [
